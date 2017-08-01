@@ -39,7 +39,7 @@ export default {
 
     this.loadPackages();
     // process imports from packages and any hooked imports
-    this.Import.flush();
+    this.Import.flush(Packages);
     // timing is important, packages are rqd for initial permissions configuration.
     if (!Meteor.isAppTest) {
       this.createDefaultAdminUser();

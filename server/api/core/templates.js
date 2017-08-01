@@ -199,7 +199,7 @@ export function initTemplates() {
         Logger.debug(`No template content found for ${t.name} asset`);
       }
     });
-    Reaction.Import.flush();
+    Reaction.Import.flush(Templates);
   });
 }
 
